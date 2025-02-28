@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <section class="a">
+        <div class="b">
+            <i class="fa-solid fa-couch"></i>
+            <p>DecorLuxe</p>
+        </div>
+        <div class="search-container">
+            <div><input type="text" class="search-bar" id="searchInput" placeholder="Search here..."></div>
+           <div> <button class="search" >search</button></div>
+        </div>
+    </section>
+    <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="seller.html">Seller</a></li>
+          <li><a href="customer.html">Customer ID</a></li>
+          <li><a href="manufacturing.html">Manufacturing Process</a></li>
+        </ul>
+      </nav>
+  </header>
+ 
+ 
+
+
+
+  <div class="chatbot-button" onclick="toggleChatbot()"><i class="fa-solid fa-couch"> </i>DecorLuxe</div>
+  <div class="chatbot-container" id="chatbot">
+      <div class="chat-header"><i class="fa-solid fa-couch"> </i>DecorLuxe</div>
+      <div class="chat-body" id="chatBody"></div>
+          <input type="text" id="userInput" placeholder="Ask a question...">
+          <button onclick="sendMessage()">Send</button>
+  </div>
+
+
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="slide fade">
+          <img src="images/slide1.jpg" alt="Slide 1">
+          <div class="slogan">"Comfort Meets Elegance"</div>
+        </div>
+    
+        <!-- Slide 2 -->
+        <div class="slide fade">
+          <img src="images/slide2.jpg" alt="Slide 2">
+          <div class="slogan">"Crafted for Your Home"</div>
+        </div>
+    
+    
+        <!-- Slide 4 -->
+        <div class="slide fade">
+          <img src="images/slide4.jpg" alt="Slide 4">
+          <div class="slogan">"Where Style Meets Function"</div>
+        </div>
+      </div> 
+
+
+<br>
+   <p style="text-align: center; font-size: 30px;font-weight: bold;">The luxury of being yourself</p>
+<!-- bed section  -->
+  <div class="containers">
+    <div class="product" onclick="openProductPage('Rebecca', '₹ 70,460', 'images/bed1.avif')">
+        <div class="images"><img src="images/bed1.avif" alt="Wooden Chair"></div>
+        <div class="product-details">
+        <div class="product-title">Rebecca</div>
+        <div class="product-price">₹ 70,460</div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product" onclick="openProductPage('Jacklin', '₹ 42,900', 'images/bed2.avif')">
+        <div class="images"><img src="images/bed2.avif" alt="Wooden Chair"></div>
+        <div class="product-details">
+        <div class="product-title">Jacklin</div>
+        <div class="product-price">₹ 70,460</div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product" onclick="openProductPage('Winston', '₹ 80,040', 'images/bed3.avif')">
+        <div class="images"><img src="images/bed3.avif" alt="Wooden Chair"></div>
+        <div class="product-details">
+        <div class="product-title">Winston</div>
+        <div class="product-price">₹ 80,040</div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product" onclick="openProductPage('Nina', '₹ 68,250', 'images/bed4.avif')">
+        <div class="images"><img src="images/bed4.avif" alt="Wooden Chair"></div>
+        <div class="product-details">
+        <div class="product-title">Nina</div>
+        <div class="product-price">₹ 68,250</div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+<!-- chair section  -->
+<p style="text-align: center; font-size: 30px;font-weight: bold;">Twice The Comfort, Twice The Value</p>
+  <div class="containers">
+    <div class="product" onclick="openProductPage('Darcy Lounge Chair', '₹8,299', 'images/chair1.avif')">
+        <div class="images"><img src="images/chair1.avif" alt="Wooden Chair"></div>
+        <div class="product-details">
+        <div class="product-title">Darcy Lounge Chair</div>
+        <div class="product-price">₹8,299</div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="product" onclick="openProductPage('Atticus Lounge Chair', '₹7,499', 'images/chair2.avif')">
+        <div class="images"><img src="images/chair2.avif" alt="Wooden Chair"></div>
+        <div class="product-details">
+        <div class="product-title">Atticus Lounge Chair</div>
+        <div class="product-price">₹7,499</div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+     
+
+      <div class="product" onclick="openProductPage('Safari High Back Nylon Base Single Lock Chair', '₹7,499', 'images/chair3.avif')">
+        <div class="images"><img src="images/chair3.avif" alt="Wooden Chair"></div>
+        <div class="product-details">
+        <div class="product-title">Safari High Back Nylon Base Single Lock Chair</div>
+        <div class="product-price">₹6,798</div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product" onclick="openProductPage('Nicco Wing Chair', '₹12,200', 'images/chair4.avif')">
+        <div class="images"><img src="images/chair4.avif" alt="Wooden Chair"></div>
+        <div class="product-details">
+        <div class="product-title">Nicco Wing Chair</div>
+        <div class="product-price">₹12,200</div>
+          <div class="product-buttons">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  
+<!-- table section  -->
+  <div class="containers">
+    <div class="product" onclick="openProductPage('Nayena Study Table ', '₹3,659', 'images/table1.jpg')">
+      <div class="images"><img src="images/table1.avif" alt="Wooden Chair"></div>
+      <div class="product-details">
+      <div class="product-title">Nayena Study Table</div>
+      <div class="product-price">₹3,659</div>
+        <div class="product-buttons">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product" onclick="openProductPage('Sage Study Table', '₹6,999', 'images/table2.avif')">
+      <div class="images"><img src="images/table2.avif" alt="Wooden Chair"></div>
+      <div class="product-details">
+      <div class="product-title">Sage Study Table</div>
+      <div class="product-price">₹6,999</div>
+        <div class="product-buttons">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product" onclick="openProductPage('Edwin Study Table', '₹2,749', 'images/table3.avif')">
+      <div class="images"><img src="images/table3.avif" alt="Wooden Chair"></div>
+      <div class="product-details">
+      <div class="product-title">Edwin Study Table</div>
+      <div class="product-price">₹2,749</div>
+        <div class="product-buttons">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product" onclick="openProductPage('Athena Study Table', '₹₹6,910', 'images/table4.avif')">
+      <div class="images"><img src="images/table4.avif" alt="Wooden Chair"></div>
+      <div class="product-details">
+      <div class="product-title">Athena Study Table</div>
+      <div class="product-price">₹6,910</div>
+        <div class="product-buttons">
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Furniture Store</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
