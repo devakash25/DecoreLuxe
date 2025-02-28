@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer ID - Furniture Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <section class="a">
+      <div class="b">
+          <i class="fa-solid fa-couch"></i>
+          <p>DecorLuxe</p>
+      </div>
+      <div class="search-container">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Search here...">
+        <button class="search-button" onclick="searchFunction()">search<i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </section>
+    <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="seller.html">Seller</a></li>
+          <li><a href="customer.html">Customer ID</a></li>
+          <li><a href="manufacturing.html">Manufacturing Process</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <div class="chatbot-button" onclick="toggleChatbot()"><i class="fa-solid fa-couch"> </i>DecorLuxe</div>
+  <div class="chatbot-container" id="chatbot">
+      <div class="chat-header"><i class="fa-solid fa-couch"> </i>DecorLuxe</div>
+      <div class="chat-body" id="chatBody"></div>
+          <input type="text" id="userInput" placeholder="Ask a question...">
+          <button onclick="sendMessage()">Send</button>
+  </div>
+
+<section class="logins">
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p>if not having account:<a href="customer.html">sign in</a></p>
+        </form>
+    </div>
+</section>
+
+  
+  <footer>
+    <p>&copy; 2025 Furniture Store</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
